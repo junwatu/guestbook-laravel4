@@ -6,3 +6,19 @@ body {
     color: red;
     font-size: small;
 }
+
+table {
+    border: 1px solid grey;
+    border-collapse: collapse;
+}
+
+table th {
+    border: 1px solid grey;
+    padding: 15px 15px;
+}
+
+table tr td{
+    border: 1px solid grey;
+    padding: 10px 10px;
+    min-width: 150px;
+}
