@@ -7,7 +7,6 @@
 
 class UserController extends BaseController
 {
-
     public function register()
     {
         $input = Input::all();
@@ -16,8 +15,17 @@ class UserController extends BaseController
         $validator = Validator::make($input, $rules);
 
         if ($validator->fails()) {
-            $messages = $validator->messages();
-            var_dump($messages);
+           return Redirect::to('/')->withErrors($validator);
+        }else{
+            // save guest data
+            $guest = new Guest();
+
+            $guest->name = Input::get('name');
+            $guest->email = Input::get('email');
+
+            $guest->save();
+
+            return "Save Success!.";
         }
     }
 }
