@@ -2,6 +2,7 @@ body {
     margin: 30px 50px;
 }
 
-form {
-    max-width: 200px;
+.error {
+    color: red;
+    font-size: small;
 }
