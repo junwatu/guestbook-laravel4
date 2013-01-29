@@ -13,7 +13,8 @@
 
 Route::get('/', function()
 {
-	return View::make('home');
+	return View::make('guestform');
 });
+
 
 Route::post('/register', 'UserController@register');
