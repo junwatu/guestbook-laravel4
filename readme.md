@@ -1,6 +1,6 @@
 ## Guestbook App Laravel 4.x
 
-### Sample Application Using Laravel 4
+Simple application built with Laravel 4.
 
 ### License
 
