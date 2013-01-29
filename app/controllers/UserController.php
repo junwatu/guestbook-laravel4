@@ -25,7 +25,13 @@ class UserController extends BaseController
 
             $guest->save();
 
-            return "Save Success!.";
+            $guests = Guest::all();
+            return Redirect::to('guests');
         }
+    }
+
+    public function show_guests(){
+        $guests = Guest::all();
+        return View::make('guestslist',array('data' => $guests));
     }
 }
