@@ -18,3 +18,5 @@ Route::get('/', function()
 
 
 Route::post('/register', 'UserController@register');
+
+Route::get('/guests', 'UserController@show_guests');
