@@ -5,9 +5,9 @@ Simple application built with Laravel 4.
 ### Install
 
 #### Install dependency packages for Laravel 4 using composer
-
+```
 $  php composer install
-
+```
 #### Create unique key for application
 
 $ php ./artisan key:generate
